@@ -17,3 +17,8 @@ load('supplyABC.mat');
 eta0 = [0,0,0,0,0,0]';
 % Initial velocity u, v, w, p, q, r
 nu0 = [0,0,0,0,0,0]';
+
+h = 0.1;
+
+init_controller;
+%kalman_init;
