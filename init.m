@@ -21,4 +21,5 @@ nu0 = [0,0,0,0,0,0]';
 h = 0.1;
 
 init_controller;
+passive_observer_init;
 %kalman_init;
