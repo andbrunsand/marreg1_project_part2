@@ -12,11 +12,11 @@ Aw = [zeros(3) eye(3); -diag_natwavefreq^2 -2*diag_reldampratios*diag_natwavefre
 Cw = [zeros(3) eye(3)];
 
 %test params
-%K1 = [-diag([2.2059, 2.2059, 2.2059]);
- %      diag([1.6157, 1.6157, 1.6157])];
-%K2 = diag([1.1, 1.1, 1.1]);
-%K4 = diag([0.1, 0.1, 0.01]);
-%K3 = 0.1*K4;
+K1 = [-diag([2.2059, 2.2059, 2.2059]);
+       diag([1.6157, 1.6157, 1.6157])];
+K2 = diag([1.1, 1.1, 1.1]);
+K4 = diag([0.1, 0.1, 0.01]);
+K3 = 0.1*K4;
 
 %T = diag([100, 100, 100]);
 
@@ -41,18 +41,18 @@ k8  =  omega_cutoff(2);
 k9  =  omega_cutoff(3);
 
 % K1 from eq. (43)
-K1 = [ diag([k1 k2 k3]);
-       diag([k4 k5 k6]) ];
+%K1 = [ diag([k1 k2 k3]);
+ %      diag([k4 k5 k6]) ];
 
 % K2 from eq. (44)
-K2 = diag([k7 k8 k9]);
+%K2 = diag([k7 k8 k9]);
 
 % K3 from eq. (45)
 M = vesselABC.MA([1 2 6], [1 2 6]) + vesselABC.MRB([1 2 6], [1 2 6]);
-K3 = diag(diag(M) * 1e-1);
+%K3 = diag(diag(M) * 1e-1);
 
 % K4 from eq. (46)
-K4 = diag(diag(M));
+%K4 = diag(diag(M));
 
 % Bias scaling matrix T
 T = diag([100, 100, 100]);

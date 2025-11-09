@@ -22,4 +22,7 @@ h = 0.1;
 
 init_controller;
 passive_observer_init;
+init_wind;
+reference_model_init;
+simulations;
 %kalman_init;
