@@ -70,7 +70,7 @@ mean_dir = 0;        % [deg] mean wind direction
 dir_var_max = 5;     % [deg] max variation
 dir_freq = 0.001;    % [rad/s] slow oscillation
 
-V_wind=10;
+V_wind = 10;
 
 % --- Gust shaping parameters ---
 T_g       = 3;                    % [s]
