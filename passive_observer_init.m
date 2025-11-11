@@ -3,7 +3,7 @@ D = [2.6486e5 0 0;
      0 8.8164e5 0;
      0 0 3.3774e8];
 
-wave_period = 7*0.7;
+wave_period = 9;
 wave_freq = 2*pi/wave_period;
 diag_natwavefreq = diag([wave_freq, wave_freq, wave_freq]);
 diag_reldampratios = diag([0.1, 0.1, 0.1]);

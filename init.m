@@ -20,8 +20,6 @@ nu0 = [0,0,0,0,0,0]';
 
 h = 0.1;
 
-new_thrust_alloc = 0;
-
 init_controller;
 passive_observer_init;
 init_wind;
