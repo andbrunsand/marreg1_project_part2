@@ -6,7 +6,7 @@ D = [2.6486e5 0 0;
 wave_period = 9;
 wave_freq = 2*pi/wave_period;
 diag_natwavefreq = diag([wave_freq, wave_freq, wave_freq]);
-diag_reldampratios = diag([0.1, 0.1, 0.1]);
+diag_reldampratios = diag([0.03, 0.03, 0.03]);
 
 Aw = [zeros(3) eye(3); -diag_natwavefreq^2 -2*diag_reldampratios*diag_natwavefreq];
 Cw = [zeros(3) eye(3)];

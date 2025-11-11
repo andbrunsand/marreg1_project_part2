@@ -4,9 +4,9 @@ w_b_yaw = 0.17;
 
 OMEGA_b = diag([w_b_surge,w_b_sway,w_b_yaw]);
 
-zeta_surge = 0.9;
-zeta_sway = 1;
-zeta_yaw = 0.9;
+zeta_surge = 1.0;
+zeta_sway = 1.0;
+zeta_yaw = 1.0;
 
 Z = diag([zeta_surge,zeta_sway,zeta_yaw]);
 
