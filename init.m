@@ -26,7 +26,7 @@ ref = diag([0; 0; 0]);
 init_controller;
 %passive_observer_init;
 NPO_init;
-init_wind;
+init_environmental;
 reference_model_init;
 simulations;
 %kalman_init;

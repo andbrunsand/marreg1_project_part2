@@ -16,7 +16,6 @@ lambda = 0.1;
 
 omega_peak = [0.9 0.9 0.9];
 omega_cutoff = [1.1 1.1 1.1];
-%omega_cutoff = 1.5 * omega_peak;
 
 k1  = -2*(zeta_ni - lambda)*omega_cutoff(1)/omega_peak(1);
 k2  = -2*(zeta_ni - lambda)*omega_cutoff(2)/omega_peak(2);
@@ -35,7 +34,7 @@ K1 = [ diag([k1 k2 k3]);
 
 K2 = diag([k7 k8 k9]);
 
-K4 = diag([ 1000 10000 1000]);
+K4 = 100000 * diag([ 1 1 100]);
 K3 = 0.1*K4;
 
 T = diag([10000, 10000, 100]);
