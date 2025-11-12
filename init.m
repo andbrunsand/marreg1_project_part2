@@ -20,8 +20,12 @@ nu0 = [0,0,0,0,0,0]';
 
 h = 0.1;
 
+ref = diag([0; 0; 0]);
+%ref = diag([0 0 0]');
+
 init_controller;
-passive_observer_init;
+%passive_observer_init;
+NPO_init;
 init_wind;
 reference_model_init;
 simulations;

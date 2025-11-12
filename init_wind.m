@@ -51,6 +51,8 @@ C_yaw_tab     = C_unique(:,6);
 % Current (North - East)
 mu1 = 0.00001; w1 = 0.00000005;
 mu2 = 0.000001; w2 = 0.0000005;
+V_c = 0.2;
+psi_c = deg2rad(270); %flows towards N/E
 
 % Wind
 Ubar_10 = 10;
@@ -76,8 +78,6 @@ V_wind = 10;
 T_g       = 3;                    % [s]
 sigma_g   = 0.08 * V_wind;        % [m/s] ~ 5–15% of mean
 Gain_gust = sqrt(2/T_g) * sigma_g;
-V_c = 0.5;
-psi_c = deg2rad(90); %flows towards N/E
 psi_w = deg2rad(180);
 
 T_dir=200;
