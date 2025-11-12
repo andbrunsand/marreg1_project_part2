@@ -7,11 +7,11 @@ RefModZeta2 = 1.1;
 RefModZeta3 = 1.0;
 
 %Surge
-RefModOmega1 = 0.05;
+RefModOmega1 = 0.025;
 %Sway
-RefModOmega2 = 0.05;
+RefModOmega2 = 0.025;
 %Yaw
-RefModOmega3 = 0.03;
+RefModOmega3 = 0.015;
 
 %Surge
 RefModDotSaturation1 = 10;
