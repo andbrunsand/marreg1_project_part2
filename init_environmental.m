@@ -65,12 +65,11 @@ mu4 = 0.001; w4 = 0.0001;
 
 
 % Gust parameters
-gust_amp = 2;        % [m/s] amplitude of gusts
-gust_freq = 0.1;     % [rad/s] frequency of gust oscillation
+gust_amp = 2;
+gust_freq = 0.1;
 
-mean_dir = 0;        % [deg] mean wind direction
-dir_var_max = 5;     % [deg] max variation
-dir_freq = 0.001;    % [rad/s] slow oscillation
+dir_var_max = 5;    
+dir_freq = 0.001;    
 
 V_wind = 10;
 
@@ -80,4 +79,4 @@ sigma_g   = 0.08 * V_wind;        % [m/s] ~ 5–15% of mean
 Gain_gust = sqrt(2/T_g) * sigma_g;
 psi_w = deg2rad(180);
 
-T_dir=200;
+T_dir = 200;
